@@ -1,0 +1,126 @@
+
+.nav {
+    background: white;
+    height: 2rem;
+    padding: 1rem 2rem;
+    position: sticky;
+    top: 0;
+    z-index: 3;
+    /* border-bottom: 2px solid; */
+}
+
+.nav__desktop {
+    display: flex;
+    height: 100%;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nav__desktop-logo {
+    display: flex;
+    height: 100%;
+    object-fit: contain;
+}
+
+.nav__title-link {
+    position: relative;
+    text-decoration: none;
+    color: inherit;
+    font-size: 1.1rem;
+    padding: 1rem;
+    margin-right: 2rem
+}
+
+.nav__desktop-menu-item {
+    position: relative;
+    padding: 1rem;
+    margin-right: 2rem;
+    cursor: pointer;
+    text-decoration: none; /* Remove underline */
+    color: inherit; /* Inherit the color from the parent */
+}
+
+.nav__desktop-menu-item::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 3px; /* Adjust thickness of the underline */
+    background-color: black;
+    transition: width 0.3s ease; /* Add transition for width */
+}
+
+.nav__desktop-menu-item:hover::after {
+    width: 100%; /* Expand width to 100% on hover */
+}
+
+.nav__desktop-menu-item:hover {
+    color: black;
+    padding-bottom: 1rem;
+}
+
+.nav__mob {
+    display: none;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    flex-direction: row;
+    width: 100vw;
+}
+
+.nav__mob-logo {
+    display: flex;
+    height: 100%;
+    width: 31px;
+    object-fit: contain;
+}
+
+.nav__mob-items {
+    display: flex;
+    background-color: white;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+    position: absolute;
+    top:48px;
+    right: 0px;
+    margin: 0;
+    z-index: -1;
+    transition: transform 0.3s ease;
+    transform: translateX(-100%);
+}
+
+.nav__mob-items.active {
+    transform: translateX(0);
+    }
+
+.nav__mob-menu-item {
+    display: flex;
+    padding: 2rem 0;
+    cursor: pointer;
+    text-decoration: none; /* Remove underline */
+    color: inherit; /* Inherit the color from the parent */
+    font-weight: bold;
+    font-size: 50px;
+}
+
+@media screen and (max-width: 720px){
+    .nav {
+        height: 3rem;
+        padding: 0;
+        border-bottom: 1px solid;
+    }
+
+    .nav__mob {
+        display: flex;
+        height: 3rem;
+        padding: 0.5rem;
+        border-bottom: 1px solid;
+    }
+
+    .nav__desktop {
+        display: none;
+    }
+}
