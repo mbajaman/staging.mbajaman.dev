@@ -1,126 +1,140 @@
-
-.nav {
-    background: white;
-    height: 2rem;
-    padding: 1rem 2rem;
-    position: sticky;
+.navbar {
+    position: fixed;
     top: 0;
-    z-index: 3;
-    /* border-bottom: 2px solid; */
+    left: 0;
+    right: 0;
+    height: 4rem;
+    background: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(10px);
+    z-index: 1000;
+    padding: 0 2rem;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
 }
 
-.nav__desktop {
+.navbar__desktop {
     display: flex;
     height: 100%;
     align-items: center;
     justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
-.nav__desktop-logo {
+.navbar__brand {
+    text-decoration: none;
+    color: #000;
+}
+
+.navbar__logo {
+    font-size: 1.5rem;
+    font-weight: 700;
+    letter-spacing: -0.5px;
+}
+
+.navbar__menu {
     display: flex;
-    height: 100%;
-    object-fit: contain;
+    gap: 2rem;
 }
 
-.nav__title-link {
+.navbar__menu-item {
     position: relative;
     text-decoration: none;
-    color: inherit;
+    color: black;
     font-size: 1.1rem;
-    padding: 1rem;
-    margin-right: 2rem
+    font-weight: 500;
+    letter-spacing: 1px;
+    padding: 0.5rem 0;
 }
 
-.nav__desktop-menu-item {
-    position: relative;
-    padding: 1rem;
-    margin-right: 2rem;
-    cursor: pointer;
-    text-decoration: none; /* Remove underline */
-    color: inherit; /* Inherit the color from the parent */
-}
-
-.nav__desktop-menu-item::after {
+.navbar__menu-item::after {
     content: '';
     position: absolute;
     left: 0;
     bottom: 0;
     width: 0;
-    height: 3px; /* Adjust thickness of the underline */
+    height: 2px;
     background-color: black;
-    transition: width 0.3s ease; /* Add transition for width */
+    transition: width 0.3s ease;
 }
 
-.nav__desktop-menu-item:hover::after {
-    width: 100%; /* Expand width to 100% on hover */
+.navbar__menu-item:hover::after {
+    width: 100%;
 }
 
-.nav__desktop-menu-item:hover {
-    color: black;
-    padding-bottom: 1rem;
-}
-
-.nav__mob {
+/* Mobile Navigation */
+.navbar__mobile {
     display: none;
-    justify-content: space-between;
-    align-items: center;
-    position: sticky;
-    flex-direction: row;
-    width: 100vw;
-}
-
-.nav__mob-logo {
-    display: flex;
     height: 100%;
-    width: 31px;
-    object-fit: contain;
+    align-items: center;
+    justify-content: space-between;
 }
 
-.nav__mob-items {
+.navbar__hamburger {
     display: flex;
-    background-color: white;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 24px;
+    height: 20px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+}
+
+.navbar__hamburger span {
+    width: 100%;
+    height: 2px;
+    background-color: #000;
+    transition: all 0.3s ease;
+}
+
+.navbar__hamburger.active span:nth-child(1) {
+    transform: translateY(9px) rotate(45deg);
+}
+
+.navbar__hamburger.active span:nth-child(2) {
+    opacity: 0;
+}
+
+.navbar__hamburger.active span:nth-child(3) {
+    transform: translateY(-9px) rotate(-45deg);
+}
+
+.navbar__mobile-menu {
+    position: fixed;
+    top: 4rem;
+    left: 0;
+    right: 0;
+    background: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(10px);
+    display: flex;
     flex-direction: column;
     align-items: center;
-    height: 100vh;
-    width: 100vw;
-    position: absolute;
-    top:48px;
-    right: 0px;
-    margin: 0;
-    z-index: -1;
+    padding: 2rem;
+    transform: translateY(-100%);
     transition: transform 0.3s ease;
-    transform: translateX(-100%);
+    visibility: hidden;
 }
 
-.nav__mob-items.active {
-    transform: translateX(0);
-    }
-
-.nav__mob-menu-item {
-    display: flex;
-    padding: 2rem 0;
-    cursor: pointer;
-    text-decoration: none; /* Remove underline */
-    color: inherit; /* Inherit the color from the parent */
-    font-weight: bold;
-    font-size: 50px;
+.navbar__mobile-menu.active {
+    transform: translateY(0);
+    visibility: visible;
 }
 
-@media screen and (max-width: 720px){
-    .nav {
-        height: 3rem;
-        padding: 0;
-        border-bottom: 1px solid;
-    }
+.navbar__mobile-item {
+    text-decoration: none;
+    color: #000;
+    font-size: 1.2rem;
+    font-weight: 500;
+    padding: 1rem 0;
+}
 
-    .nav__mob {
-        display: flex;
-        height: 3rem;
-        padding: 0.5rem;
-        border-bottom: 1px solid;
-    }
-
-    .nav__desktop {
+@media (max-width: 768px) {
+    .navbar__desktop {
         display: none;
+    }
+
+    .navbar__mobile {
+        display: flex;
     }
 }
