@@ -4,9 +4,9 @@ import { Link } from 'react-router-dom';
 
 const Footer = () => {
     const socialLinks = [
-        { name: 'GitHub', url: 'https://github.com/yourusername' },
-        { name: 'LinkedIn', url: 'https://linkedin.com/in/yourusername' },
-        { name: 'Itch', url: 'https://itch.com/yourusername' }
+        { name: 'GitHub', url: 'https://github.com/mbajaman' },
+        { name: 'LinkedIn', url: 'https://www.linkedin.com/in/mbajaman/' },
+        { name: 'Itch', url: 'https://mbajaman.itch.io/' }
     ];
 
     return (
