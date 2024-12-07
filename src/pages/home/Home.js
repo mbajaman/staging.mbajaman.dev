@@ -16,16 +16,18 @@ import uiIcon from '../../assets/ui-icon.svg'
 
 const Home = () => {
     const roles = [
-        'Full Stack Developer',
-        2000, // Delay in milliseconds
+        'Software Engineer',
+        2000,
         'Game Developer',
         2000,
         'IT Solutions Analyst',
         2000,
-        'Software Engineer',
-        2000,
         'Unity Developer',
         2000,
+        'Full Stack Developer',
+        2000,
+        'UE5 Developer',
+        2000
     ];
 
     const skillCards = [
