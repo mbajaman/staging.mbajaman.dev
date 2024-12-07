@@ -2,11 +2,16 @@ import React from 'react'
 import './Footer.css'
 import { Link } from 'react-router-dom';
 
+// Import icons
+import githubIcon from '../../assets/social-icons/github.svg'
+import linkedinIcon from '../../assets/social-icons/linkedin.svg'
+import itchIcon from '../../assets/social-icons/itchio.svg'
+
 const Footer = () => {
     const socialLinks = [
-        { name: 'GitHub', url: 'https://github.com/mbajaman' },
-        { name: 'LinkedIn', url: 'https://www.linkedin.com/in/mbajaman/' },
-        { name: 'Itch', url: 'https://mbajaman.itch.io/' }
+        { name: 'GitHub', url: 'https://github.com/mbajaman', icon: githubIcon },
+        { name: 'LinkedIn', url: 'https://www.linkedin.com/in/mbajaman/', icon: linkedinIcon },
+        { name: 'Itch', url: 'https://mbajaman.itch.io/', icon: itchIcon }
     ];
 
     return (
@@ -29,8 +34,9 @@ const Footer = () => {
                             href={link.url}
                             target="_blank"
                             rel="noopener noreferrer"
+                            className="social-icon"
                         >
-                            {link.name}
+                            <img src={link.icon} alt={link.name} />
                         </a>
                     ))}
                 </div>

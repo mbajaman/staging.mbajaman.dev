@@ -1,32 +1,32 @@
 {
     "projects": [
         {
-            "name": "Project 1",
+            "name": "HyperGOAP",
             "description": "Description of project 1",
             "images": ["path/to/image1.jpg", "path/to/image2.jpg"],
             "link": "https://example.com",
-            "tags": ["tag1", "tag2", "tag3"]
+            "tags": ["UE5", "PCG", "AI"]
         },
         {
-            "name": "Project 2",
+            "name": "Illume",
             "description": "Description of project 2",
             "images": ["path/to/image1.jpg", "path/to/image2.jpg"],
             "link": "https://example.com",
-            "tags": ["tag1", "tag2", "tag3"]
+            "tags": ["Unity", "Storytelling"]
         },
         {
-            "name": "Project 3",
+            "name": "Focus Breakout",
             "description": "Description of project 3",
             "images": ["path/to/image1.jpg", "path/to/image2.jpg"],
             "link": "https://example.com",
-            "tags": ["tag1", "tag2", "tag3"]
+            "tags": ["Unity", "Level Design", "Action/Adventure"]
         },
         {
-            "name": "Project 4",
+            "name": "SAD",
             "description": "Description of project 4",
             "images": ["path/to/image1.jpg", "path/to/image2.jpg"],
             "link": "https://example.com",
-            "tags": ["tag1", "tag2", "tag3"]
+            "tags": ["C++", "Game Engine"]
         }
     ]
 }

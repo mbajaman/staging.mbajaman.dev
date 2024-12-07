@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState, useEffect } from 'react'
 import { Link } from 'react-router-dom'
 import { TypeAnimation } from 'react-type-animation'
 import Navbar from '../../components/navbar/Navbar'
@@ -9,10 +9,13 @@ import './Home.css'
 import workGif from './work.gif'
 
 // Import icons
-import backendIcon from '../../assets/server-icon.svg'
-import webIcon from '../../assets/www.svg'
-import gameIcon from '../../assets/game-icon.svg'
-import uiIcon from '../../assets/ui-icon.svg'
+import backendIcon from '../../assets/skill-icons/server-icon.svg'
+import webIcon from '../../assets/skill-icons/www.svg'
+import gameIcon from '../../assets/skill-icons/game-icon.svg'
+import uiIcon from '../../assets/skill-icons/ui-icon.svg'
+import githubIcon from '../../assets/social-icons/github.svg'
+import linkedinIcon from '../../assets/social-icons/linkedin.svg'
+import itchIcon from '../../assets/social-icons/itchio.svg'
 
 const Home = () => {
     const roles = [
@@ -53,12 +56,53 @@ const Home = () => {
         }
     ];
 
+    const socialLinks = [
+        { name: 'GitHub', url: 'https://github.com/mbajaman', icon: githubIcon },
+        { name: 'LinkedIn', url: 'https://www.linkedin.com/in/mbajaman/', icon: linkedinIcon },
+        { name: 'Itch', url: 'https://mbajaman.itch.io/', icon: itchIcon }
+    ];
+
+    const [activeSection, setActiveSection] = useState(0);
+
+    // Add scroll event listener to track sections
+    useEffect(() => {
+        const handleScroll = () => {
+            const sections = document.querySelectorAll('.section-tracker');
+            const scrollPosition = window.scrollY + window.innerHeight / 2;
+
+            sections.forEach((section, index) => {
+                const sectionTop = section.offsetTop;
+                const sectionBottom = sectionTop + section.offsetHeight;
+
+                if (scrollPosition >= sectionTop && scrollPosition < sectionBottom) {
+                    setActiveSection(index);
+                }
+            });
+        };
+
+        window.addEventListener('scroll', handleScroll);
+        return () => window.removeEventListener('scroll', handleScroll);
+    }, []);
+
     return (
         <div className="home-container">
             <Navbar />
             
             <main className="home-content">
-                <div className="hero-section">
+                <div className="hero-section section-tracker">
+                    <div className="hero-social-links-vertical">
+                        {socialLinks.map((link) => (
+                            <a 
+                                key={link.name}
+                                href={link.url}
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="social-icon"
+                            >
+                                <img src={link.icon} alt={link.name} />
+                            </a>
+                        ))}
+                    </div>
                     <div className="hero-text">
                         <h1>
                             Hello, I'm
@@ -79,28 +123,24 @@ const Home = () => {
                             Passionate about creating elegant solutions through code. 
                             Specializing in software engineering, game development, and IT solutions.
                         </p>
-                        <div className="cta-buttons">
-                            <Link to="/portfolio" className="primary-button">
-                                View My Work
-                            </Link>
-                            <Link to="/contact" className="secondary-button">
-                                Let's Connect
-                            </Link>
+                        <div className="hero-actions">
+                            <div className="cta-buttons">
+                                <Link to="/portfolio" className="primary-button">
+                                    View My Work
+                                </Link>
+                                <Link to="/contact" className="secondary-button">
+                                    Let's Connect
+                                </Link>
+                            </div>
                         </div>
                     </div>
 
                     <div className="hero-image">
                         <img src={workGif} alt="Developer working" />
                     </div>
-
-                    <div className="timeline-indicator">
-                        <div className="dot active"></div>
-                        <div className="dot"></div>
-                        <div className="dot"></div>
-                    </div>
                 </div>
 
-                <section className="skills-section">
+                <section className="skills-section section-tracker">
                     <h2 className="section-title">Skill-Set</h2>
                     
                     <div className="skills-grid">
@@ -117,6 +157,19 @@ const Home = () => {
                         ))}
                     </div>
                 </section>
+
+                <div className="timeline-indicator">
+                    {[0, 1].map((index) => (
+                        <div
+                            key={index}
+                            className={`dot ${activeSection === index ? 'active' : ''}`}
+                            onClick={() => {
+                                const sections = document.querySelectorAll('.section-tracker');
+                                sections[index].scrollIntoView({ behavior: 'smooth' });
+                            }}
+                        />
+                    ))}
+                </div>
             </main>
             
             <Footer />

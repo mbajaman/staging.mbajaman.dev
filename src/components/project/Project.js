@@ -1,10 +1,35 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 import './Project.css'
 import projectsData from '../../data/projects.json'
 
 const Project = () => {
     const { projects } = projectsData
     const [flippedCards, setFlippedCards] = useState({})
+    const [selectedTag, setSelectedTag] = useState('all')
+    const [filteredProjects, setFilteredProjects] = useState(projects)
+    
+    // Separate programming languages from other tags
+    const programmingTags = ['React', 'Node.js', 'TypeScript', 'C#', 'UE5', 'Unity']
+    const otherTags = ['PCG', 'Storytelling', 'Level Design']
+    
+    // Get unique tags from all projects, separated by category
+    const allProgrammingTags = ['all', ...new Set(projects.flatMap(project => 
+        project.tags.filter(tag => programmingTags.includes(tag))
+    ))]
+    const allOtherTags = [...new Set(projects.flatMap(project => 
+        project.tags.filter(tag => otherTags.includes(tag))
+    ))]
+
+    useEffect(() => {
+        if (selectedTag === 'all') {
+            setFilteredProjects(projects)
+        } else {
+            const filtered = projects.filter(project => 
+                project.tags.includes(selectedTag)
+            )
+            setFilteredProjects(filtered)
+        }
+    }, [selectedTag, projects])
 
     const handleCardClick = (projectName) => {
         setFlippedCards(prev => ({
@@ -15,8 +40,48 @@ const Project = () => {
 
     return (
         <div className="project">
+            <div className="project__filter">
+                <div className="filter-section">
+                    <span className="filter-label">Technologies</span>
+                    <div className="filter-tags">
+                        {allProgrammingTags.map((tag) => (
+                            <button
+                                key={tag}
+                                className={`filter-tag ${selectedTag === tag ? 'active' : ''}`}
+                                onClick={() => setSelectedTag(tag)}
+                            >
+                                {tag}
+                            </button>
+                        ))}
+                    </div>
+                </div>
+                
+                {allOtherTags.length > 0 && (
+                    <>
+                        <div className="filter-divider">
+                            <span></span>
+                        </div>
+
+                        <div className="filter-section">
+                            <span className="filter-label">Categories</span>
+                            <div className="filter-tags">
+                                {allOtherTags.map((tag) => (
+                                    <button
+                                        key={tag}
+                                        className={`filter-tag ${selectedTag === tag ? 'active' : ''}`}
+                                        onClick={() => setSelectedTag(tag)}
+                                    >
+                                        {tag}
+                                    </button>
+                                ))}
+                            </div>
+                        </div>
+                    </>
+                )}
+            </div>
+            
             <div className="project__content">
-                {projects.map((project) => (
+                {filteredProjects.map((project) => (
                     <div 
                         className={`project-card ${flippedCards[project.name] ? 'flipped' : ''}`}
                         key={project.name}

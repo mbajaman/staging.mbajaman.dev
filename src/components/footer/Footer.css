@@ -41,6 +41,27 @@
     color: #0984e3;
 }
 
+.footer__social-links {
+    display: flex;
+    gap: 1rem;
+}
+
+.social-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.social-icon img {
+    width: 24px;
+    height: 24px;
+    transition: transform 0.3s ease;
+}
+
+.social-icon:hover img {
+    transform: scale(1.1);
+}
+
 @media (max-width: 768px) {
     .footer {
         padding: 1.25rem 5%;
@@ -55,5 +76,10 @@
     .footer__links,
     .footer__social-links {
         gap: 1.5rem;
+    }
+
+    .social-icon img {
+        width: 22px;
+        height: 22px;
     }
 }
