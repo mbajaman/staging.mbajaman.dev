@@ -128,7 +128,7 @@ const Home = () => {
                                 <Link to="/portfolio" className="primary-button">
                                     View My Work
                                 </Link>
-                                <Link to="/contact" className="secondary-button">
+                                <Link to="https://www.linkedin.com/in/mbajaman/" className="secondary-button">
                                     Let's Connect
                                 </Link>
                             </div>
@@ -141,7 +141,7 @@ const Home = () => {
                 </div>
 
                 <section className="skills-section section-tracker">
-                    <h2 className="section-title">Skill-Set</h2>
+                    <h2 className="section-title">Skills</h2>
                     
                     <div className="skills-grid">
                         {skillCards.map((card, index) => (

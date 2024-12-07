@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import { Link } from 'react-router-dom'
+import { Link, NavLink } from 'react-router-dom'
 import './Navbar.css'
 
 const Navbar = () => {
@@ -22,13 +22,15 @@ const Navbar = () => {
                 
                 <div className='navbar__menu'>
                     {navItems.map((item) => (
-                        <Link 
+                        <NavLink 
                             key={item.label}
                             to={item.path}
-                            className='navbar__menu-item'
+                            className={({ isActive }) => 
+                                `navbar__menu-item ${isActive ? 'active' : ''}`
+                            }
                         >
                             {item.label}
-                        </Link>
+                        </NavLink>
                     ))}
                 </div>
             </div>

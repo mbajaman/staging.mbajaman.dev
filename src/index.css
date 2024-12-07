@@ -5,9 +5,51 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  overflow-y: overlay;  /* Makes scrollbar overlay content */
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+/* Modern scrollbar styling */
+::-webkit-scrollbar {
+  width: 8px;
+  background: transparent;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(9, 132, 227, 0.3);  /* #0984e3 with opacity */
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(9, 132, 227, 0.5);
+}
+
+/* Firefox scrollbar styling */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: rgba(9, 132, 227, 0.3) transparent;
+}
+
+/* Hide scrollbar when not scrolling, but keep functionality */
+@media (hover: hover) {
+  ::-webkit-scrollbar-thumb {
+    visibility: hidden;
+  }
+  
+  ::-webkit-scrollbar-track {
+    visibility: hidden;
+  }
+
+  *:hover::-webkit-scrollbar-thumb,
+  *:hover::-webkit-scrollbar-track {
+    visibility: visible;
+  }
 }

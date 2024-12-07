@@ -57,8 +57,17 @@
     transition: width 0.3s ease;
 }
 
-.navbar__menu-item:hover::after {
+.navbar__menu-item:hover::after,
+.navbar__menu-item.active::after {
     width: 100%;
+}
+
+.navbar__menu-item.active {
+    color: #0984e3;
+}
+
+.navbar__menu-item.active::after {
+    background-color: #0984e3;
 }
 
 /* Mobile Navigation */
