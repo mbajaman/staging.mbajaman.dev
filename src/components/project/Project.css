@@ -1,0 +1,135 @@
+.project {
+    background-color: transparent;
+    padding: 0 10% 4rem;
+    flex: 1;
+}
+
+.project__content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.project-card {
+    perspective: 1000px;
+    height: 330px;
+    cursor: pointer;
+}
+
+.project-card__inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border: 1px solid rgba(74, 137, 220, 0.1);
+    background: white;
+}
+
+.project-card:hover .project-card__inner {
+    transform: scale(1.02);
+    box-shadow: 0 8px 16px rgba(74, 137, 220, 0.06);
+}
+
+.project-card.flipped .project-card__inner {
+    transform: rotateY(180deg);
+}
+
+.project-card__front,
+.project-card__back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    border-radius: 12px;
+    background: white;
+    overflow: hidden;
+}
+
+.project-card__back {
+    transform: rotateY(180deg);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0.75rem;
+    background: linear-gradient(to bottom right, #fff, rgba(74, 137, 220, 0.02));
+}
+
+.project-card__image {
+    width: 100%;
+    height: 280px;
+    overflow: hidden;
+}
+
+.project-card__image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: blur(0px);
+    transition: filter 0.3s ease;
+}
+
+.project-card__tags {
+    position: absolute;
+    top: 1rem;
+    left: 1rem;
+    z-index: 1;
+    display: flex;
+    gap: 0.5rem;
+    flex-wrap: wrap;
+}
+
+.project-card__tag {
+    background: rgba(74, 137, 220, 0.08);
+    padding: 0.25rem 0.75rem;
+    border-radius: 15px;
+    font-size: 0.8rem;
+    color: #4a89dc;
+    backdrop-filter: blur(4px);
+}
+
+.project-card__title {
+    margin: 0.5rem 0;
+    color: #4a89dc;
+    font-size: 1.2rem;
+    padding: 0 1rem;
+}
+
+.project-card__description {
+    color: #666;
+    line-height: 1.5;
+    margin-bottom: 0.75rem;
+    font-size: 0.95rem;
+}
+
+.project-card__link {
+    display: inline-block;
+    padding: 0.5rem 1.25rem;
+    background-color: #4a89dc;
+    color: white;
+    text-decoration: none;
+    border-radius: 25px;
+    transition: all 0.3s ease;
+    font-size: 0.9rem;
+    border: none;
+    font-weight: 500;
+}
+
+.project-card__link:hover {
+    background-color: #357abd;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(74, 137, 220, 0.15);
+}
+
+@media (min-width: 768px) {
+    .project__content {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+

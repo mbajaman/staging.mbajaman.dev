@@ -2,29 +2,21 @@
     min-height: 100vh;
     display: flex;
     flex-direction: column;
-    background-color: #f8f9fa;
+    background-color: #fcfdff;
 }
 
 .work-content {
     flex: 1;
     padding-top: 4rem; /* Account for fixed navbar */
     display: flex;
-    align-items: center;
-    justify-content: center;
+    flex-direction: column;
 }
 
-.work-placeholder {
+.work-title {
     text-align: center;
-    padding: 2rem;
-}
-
-.work-placeholder h1 {
     font-size: 2.5rem;
-    color: #2d3436;
-    margin-bottom: 1rem;
-}
-
-.work-placeholder p {
-    font-size: 1.2rem;
-    color: #636e72;
+    color: #4a89dc;
+    margin: 2rem 0;
+    font-weight: 500;
+    letter-spacing: -0.5px;
 }

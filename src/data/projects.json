@@ -1,0 +1,32 @@
+{
+    "projects": [
+        {
+            "name": "Project 1",
+            "description": "Description of project 1",
+            "images": ["path/to/image1.jpg", "path/to/image2.jpg"],
+            "link": "https://example.com",
+            "tags": ["tag1", "tag2", "tag3"]
+        },
+        {
+            "name": "Project 2",
+            "description": "Description of project 2",
+            "images": ["path/to/image1.jpg", "path/to/image2.jpg"],
+            "link": "https://example.com",
+            "tags": ["tag1", "tag2", "tag3"]
+        },
+        {
+            "name": "Project 3",
+            "description": "Description of project 3",
+            "images": ["path/to/image1.jpg", "path/to/image2.jpg"],
+            "link": "https://example.com",
+            "tags": ["tag1", "tag2", "tag3"]
+        },
+        {
+            "name": "Project 4",
+            "description": "Description of project 4",
+            "images": ["path/to/image1.jpg", "path/to/image2.jpg"],
+            "link": "https://example.com",
+            "tags": ["tag1", "tag2", "tag3"]
+        }
+    ]
+}

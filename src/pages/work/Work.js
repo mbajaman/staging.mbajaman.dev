@@ -1,6 +1,7 @@
 import React from 'react'
 import Navbar from '../../components/navbar/Navbar'
 import Footer from '../../components/footer/Footer'
+import Project from '../../components/project/Project'
 import './Work.css'
 
 const Work = () => {
@@ -9,10 +10,8 @@ const Work = () => {
             <Navbar />
             
             <main className="work-content">
-                <div className="work-placeholder">
-                    <h1>Portfolio Work</h1>
-                    <p>Coming Soon</p>
-                </div>
+                <h1 className="work-title">My Projects</h1>
+                <Project />
             </main>
 
             <Footer />
