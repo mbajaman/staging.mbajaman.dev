@@ -30,9 +30,9 @@ const Home = () => {
 
     const skillCards = [
         {
-            icon: backendIcon,
-            title: "IT Solutions",
-            description: "Building and securing IT applications"
+            icon: uiIcon,
+            title: "Software Engineering",
+            description: "Building scalable and efficient software solutions"
         },
         {
             icon: gameIcon,
@@ -40,9 +40,9 @@ const Home = () => {
             description: "Developing engaging gaming experiences"
         },
         {
-            icon: uiIcon,
-            title: "Software Engineering",
-            description: "Building scalable and efficient software solutions"
+            icon: backendIcon,
+            title: "IT Solutions",
+            description: "Building and securing IT applications"
         },
         {
             icon: webIcon,

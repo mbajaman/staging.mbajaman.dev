@@ -1,0 +1,30 @@
+.about-container {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background-color: #f8f9fa;
+}
+
+.about-content {
+    flex: 1;
+    padding-top: 4rem; /* Account for fixed navbar */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.about-placeholder {
+    text-align: center;
+    padding: 2rem;
+}
+
+.about-placeholder h1 {
+    font-size: 2.5rem;
+    color: #2d3436;
+    margin-bottom: 1rem;
+}
+
+.about-placeholder p {
+    font-size: 1.2rem;
+    color: #636e72;
+}
