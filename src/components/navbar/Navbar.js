@@ -13,6 +13,10 @@ const Navbar = () => {
 
     const toggleMenu = () => setIsMenuOpen(!isMenuOpen);
 
+    const handleNavClick = () => {
+        setIsMenuOpen(false);
+    };
+
     return (
         <nav className='navbar'>
             <div className='navbar__desktop'>
@@ -36,10 +40,6 @@ const Navbar = () => {
             </div>
 
             <div className='navbar__mobile'>
-                <Link className='navbar__brand' to='/'>
-                    <span className='navbar__logo'>MB</span>
-                </Link>
-
                 <button 
                     className={`navbar__hamburger ${isMenuOpen ? 'active' : ''}`}
                     onClick={toggleMenu}
@@ -50,12 +50,30 @@ const Navbar = () => {
                     <span></span>
                 </button>
 
+                <Link className='navbar__brand' to='/'>
+                    <span className='navbar__logo'>MB</span>
+                </Link>
+
+                <div 
+                    className={`navbar__mobile-overlay ${isMenuOpen ? 'active' : ''}`}
+                    onClick={handleNavClick}
+                ></div>
+
                 <div className={`navbar__mobile-menu ${isMenuOpen ? 'active' : ''}`}>
-                {/* <Link className='nav__desktop-logo' to='/'>
-                    <img alt='Logo' src={Logo} />
-                </Link> */}
+                    {navItems.map((item) => (
+                        <NavLink 
+                            key={item.label}
+                            to={item.path}
+                            className={({ isActive }) => 
+                                `navbar__mobile-item ${isActive ? 'active' : ''}`
+                            }
+                            onClick={handleNavClick}
+                        >
+                            {item.label}
+                        </NavLink>
+                    ))}
+                </div>
             </div>
-        </div>
         </nav>
     )
 }
