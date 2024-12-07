@@ -10,7 +10,7 @@ import workGif from './work.gif'
 
 // Import icons
 import backendIcon from '../../assets/server-icon.svg'
-import webIcon from '../../assets/web-icon.svg'
+import webIcon from '../../assets/www.svg'
 import gameIcon from '../../assets/game-icon.svg'
 import uiIcon from '../../assets/ui-icon.svg'
 
