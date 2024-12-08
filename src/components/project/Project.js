@@ -1,11 +1,13 @@
 import React, { useState, useEffect } from 'react'
 import './Project.css'
 import projectsData from '../../data/projects.json'
+import ProjectModal from '../modal/ProjectModal'
 
 const Project = () => {
     const { projects } = projectsData
     const [selectedTag, setSelectedTag] = useState('all')
     const [filteredProjects, setFilteredProjects] = useState(projects)
+    const [selectedProject, setSelectedProject] = useState(null)
     
     // Separate programming languages from other tags
     const programmingTags = ['React', 'Node.js', 'TypeScript', 'C#', 'UE5', 'Unity', 'AI']
@@ -29,6 +31,14 @@ const Project = () => {
             setFilteredProjects(filtered)
         }
     }, [selectedTag, projects])
+
+    const openModal = (project) => {
+        setSelectedProject(project)
+    }
+
+    const closeModal = () => {
+        setSelectedProject(null)
+    }
 
     return (
         <div className="project">
@@ -104,10 +114,11 @@ const Project = () => {
                                 </div>
                                 <p className="project-card__description">{project.description}</p>
                                 <a 
-                                    href={project.link} 
+                                    onClick={(e) => {
+                                        e.preventDefault()
+                                        openModal(project)
+                                    }}
                                     className="project-card__link"
-                                    target="_blank"
-                                    rel="noopener noreferrer"
                                 >
                                     View Project
                                 </a>
@@ -116,6 +127,14 @@ const Project = () => {
                     </div>
                 ))}
             </div>
+            
+            {selectedProject && (
+                <ProjectModal 
+                    project={selectedProject}
+                    isOpen={!!selectedProject}
+                    onClose={closeModal}
+                />
+            )}
         </div>
     )
 }
