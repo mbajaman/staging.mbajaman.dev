@@ -2,28 +2,28 @@
     "projects": [
         {
             "name": "HyperGOAP",
-            "description": "Description of project 1",
+            "description": "A simple open-world game created in UE5 showcasing procedural terrain generation by using Markov Chain Models along with Goal-Oriented Action Planning (GOAP) AI architecture for NPCs.",
             "images": ["path/to/image1.jpg", "path/to/image2.jpg"],
             "link": "https://example.com",
             "tags": ["UE5", "PCG", "AI"]
         },
         {
             "name": "Illume",
-            "description": "Description of project 2",
+            "description": "A visually story rich game made with a low poly art style that follows the story of a girl and the future of the forest.",
             "images": ["path/to/image1.jpg", "path/to/image2.jpg"],
             "link": "https://example.com",
             "tags": ["Unity", "Storytelling"]
         },
         {
             "name": "Focus Breakout",
-            "description": "Description of project 3",
+            "description": "A 3D adventure game made in Unity where you play as a target orb trying to survive and escape the aim trainer simulation, all while tackling obstacles and puzzles over levels of varying difficulty.",
             "images": ["path/to/image1.jpg", "path/to/image2.jpg"],
             "link": "https://example.com",
             "tags": ["Unity", "Level Design", "Action/Adventure"]
         },
         {
             "name": "SAD",
-            "description": "Description of project 4",
+            "description": "A game engine created using C++ from the ground up with a team of 12 members. Game engine was created using ECS architecture. Engine features include: lighting, scripting, ray-casting, moving player-camera and rendering of 3D models and materials.",
             "images": ["path/to/image1.jpg", "path/to/image2.jpg"],
             "link": "https://example.com",
             "tags": ["C++", "Game Engine"]

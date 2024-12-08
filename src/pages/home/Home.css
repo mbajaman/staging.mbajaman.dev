@@ -208,6 +208,7 @@
 
     .hero-text h2 {
         font-size: 2rem;
+        justify-content: center;
     }
 
     .cta-buttons {

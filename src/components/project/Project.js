@@ -4,12 +4,11 @@ import projectsData from '../../data/projects.json'
 
 const Project = () => {
     const { projects } = projectsData
-    const [flippedCards, setFlippedCards] = useState({})
     const [selectedTag, setSelectedTag] = useState('all')
     const [filteredProjects, setFilteredProjects] = useState(projects)
     
     // Separate programming languages from other tags
-    const programmingTags = ['React', 'Node.js', 'TypeScript', 'C#', 'UE5', 'Unity']
+    const programmingTags = ['React', 'Node.js', 'TypeScript', 'C#', 'UE5', 'Unity', 'AI']
     const otherTags = ['PCG', 'Storytelling', 'Level Design']
     
     // Get unique tags from all projects, separated by category
@@ -30,13 +29,6 @@ const Project = () => {
             setFilteredProjects(filtered)
         }
     }, [selectedTag, projects])
-
-    const handleCardClick = (projectName) => {
-        setFlippedCards(prev => ({
-            ...prev,
-            [projectName]: !prev[projectName]
-        }))
-    }
 
     return (
         <div className="project">
@@ -83,29 +75,33 @@ const Project = () => {
             <div className="project__content">
                 {filteredProjects.map((project) => (
                     <div 
-                        className={`project-card ${flippedCards[project.name] ? 'flipped' : ''}`}
+                        className="project-card"
                         key={project.name}
-                        onClick={() => handleCardClick(project.name)}
                     >
                         <div className="project-card__inner">
-                            <div className="project-card__front">
-                                <div className="project-card__tags">
+                            <div className="project-card__image">
+                                <img 
+                                    src={`https://placehold.co/600x400/png`} 
+                                    alt={project.name}
+                                />
+                            </div>
+                            <div className="project-card__tags project-card__tags--static">
+                                {project.tags.map((tag) => (
+                                    <span key={tag} className="project-card__tag">
+                                        {tag}
+                                    </span>
+                                ))}
+                            </div>
+                            <h3 className="project-card__title">{project.name}</h3>
+                            
+                            <div className="project-card__overlay">
+                                <div className="project-card__tags project-card__tags--overlay">
                                     {project.tags.map((tag) => (
                                         <span key={tag} className="project-card__tag">
                                             {tag}
                                         </span>
                                     ))}
                                 </div>
-                                <div className="project-card__image">
-                                    <img 
-                                        src={`https://placehold.co/600x400/png`} 
-                                        alt={project.name}
-                                    />
-                                </div>
-                                <h3 className="project-card__title">{project.name}</h3>
-                            </div>
-                            <div className="project-card__back">
-                                <h3 className="project-card__title">{project.name}</h3>
                                 <p className="project-card__description">{project.description}</p>
                                 <a 
                                     href={project.link} 
