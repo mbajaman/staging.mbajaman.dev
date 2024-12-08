@@ -3,8 +3,11 @@ import Navbar from '../../components/navbar/Navbar'
 import Footer from '../../components/footer/Footer'
 import './About.css'
 
-// Import placeholder image - replace with your actual image
 import placeholderImage from '../../assets/profile.jpg'
+import lolIcon from '../../assets/about-icons/wr_lol.png'
+import gamepadIcon from '../../assets/about-icons/gamepad.svg'
+import badoIcon from '../../assets/about-icons/bado.svg'
+import esportsIcon from '../../assets/about-icons/esports.svg'
 
 const About = () => {
     return (
@@ -19,7 +22,7 @@ const About = () => {
                     </div>
                     
                     <div className="about-text">
-                        <h1>About Me</h1>
+                        <h1 className="section-title">About Me</h1>
                         <p className="subtitle">Software Engineer & Game Developer</p>
                         
                         <div className="about-description">
@@ -35,21 +38,43 @@ const About = () => {
                                 I bring a unique perspective to problem-solving. I enjoy learning
                                 new things and applying them to real-world problems.
                             </p>
-                            <p><i>Psst click the icons below to learn more about me!</i></p>
+                            <p><i>Psst hover the peeking images</i> 👀</p>
 
-                            <div className="quick-info">
-                                <div className="info-item">
-                                    <span className="label">Location</span>
-                                    <span className="value">Vancouver, BC</span>
+                            <div className="quick-info-container">
+                                <div className="quick-info">
+                                    <div className="info-item">
+                                        <span className="label">Location</span>
+                                        <span className="value">Vancouver, BC</span>
+                                    </div>
+                                    <div className="info-item">
+                                        <span className="label">Email</span>
+                                        <span className="value">mohammed_bajaman@hotmail.com</span>
+                                    </div>
+                                    <div className="info-item">
+                                        <span className="label">Degree</span>
+                                        <span className="value">BTech (opt. Games Development)</span>
+                                    </div>
                                 </div>
-                                <div className="info-item">
-                                    <span className="label">Email</span>
-                                    <span className="value">mohammed_bajaman@hotmail.com</span>
+                                
+                                <div className="peeking-icons">
+                                    <div className="peek-icon-wrapper gamepad">
+                                        <img src={gamepadIcon} alt="Gaming" className="peek-icon" />
+                                        <div className="chat-bubble">I'm a gamer!👾</div>
+                                    </div>
+                                    <div className="peek-icon-wrapper bado">
+                                        <img src={badoIcon} alt="Badminton" className="peek-icon" />
+                                        <div className="chat-bubble">In my badminton arc!</div>
+                                    </div>
+                                    <div className="peek-icon-wrapper lol">
+                                        <img src={lolIcon} alt="League of Legends" className="peek-icon" />
+                                        <div className="chat-bubble">Top 1% in EMEA WildRift 😎</div>
+                                    </div>
+                                    <div className="peek-icon-wrapper esports">
+                                        <img src={esportsIcon} alt="E-Sports" className="peek-icon" />
+                                        <div className="chat-bubble">I'm an esports fan!</div>
+                                    </div>
                                 </div>
-                                <div className="info-item">
-                                    <span className="label">Degree</span>
-                                    <span className="value">BTech (opt. Games Development)</span>
-                                </div>
+
                             </div>
                         </div>
                     </div>
