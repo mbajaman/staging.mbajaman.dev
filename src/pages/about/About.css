@@ -180,7 +180,6 @@
 
 .peek-icon-wrapper:hover {
     transform: translateY(0) rotate(0deg) !important;
-    z-index: 10;
 }
 
 .chat-bubble {
