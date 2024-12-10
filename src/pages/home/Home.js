@@ -5,14 +5,17 @@ import Navbar from '../../components/navbar/Navbar'
 import Footer from '../../components/footer/Footer'
 import './Home.css'
 
-// Import Media
+// Import GIF Illustration
 import workGif from './work.gif'
 
-// Import icons
-import backendIcon from '../../assets/skill-icons/server-icon.svg'
-import webIcon from '../../assets/skill-icons/www.svg'
-import gameIcon from '../../assets/skill-icons/game-icon.svg'
-import uiIcon from '../../assets/skill-icons/ui-icon.svg'
+// Import skill card icons
+import uiIcon from '../../assets/skill-icons/code.svg'
+import gameIcon from '../../assets/skill-icons/gamepad.svg'
+import backendIcon from '../../assets/skill-icons/server.svg'
+import aiIcon from '../../assets/skill-icons/bot.svg'
+import webIcon from '../../assets/skill-icons/globe.svg'
+
+// Import social icons
 import githubIcon from '../../assets/social-icons/github.svg'
 import linkedinIcon from '../../assets/social-icons/linkedin.svg'
 import itchIcon from '../../assets/social-icons/itchio.svg'
@@ -21,15 +24,15 @@ const Home = () => {
     const roles = [
         'Software Engineer',
         2000,
-        'Game Developer',
+        'Game Programmer',
         2000,
         'IT Solutions Analyst',
         2000,
         'Unity Developer',
         2000,
-        'Full Stack Developer',
-        2000,
         'UE5 Developer',
+        2000,
+        'AI Programmer',
         2000
     ];
 
@@ -50,10 +53,16 @@ const Home = () => {
             description: "Building and securing IT applications"
         },
         {
+            icon: aiIcon,
+            title: "AI Programming",
+            description: "Training and deploying AI models"
+        },
+        {
             icon: webIcon,
             title: "Web Development",
             description: "Crafting modern and responsive web applications"
-        }
+        },
+
     ];
 
     const socialLinks = [
