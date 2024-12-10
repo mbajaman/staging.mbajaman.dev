@@ -107,14 +107,14 @@
     width: 12px;
     height: 12px;
     border-radius: 50%;
-    background-color: #dfe6e9;
+    background-color: #99c0df;
     transition: all 0.3s ease;
     cursor: pointer;
 }
 
 .dot:hover {
     transform: scale(1.2);
-    background-color: #b2bec3;
+    background-color: #69a6d8;
 }
 
 .dot.active {

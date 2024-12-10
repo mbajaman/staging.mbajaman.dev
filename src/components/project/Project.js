@@ -19,8 +19,8 @@ const Project = () => {
     }
 
     // Separate programming languages from other tags
-    const programmingTags = ['React', 'Node.js', 'TypeScript', 'C#', 'UE5', 'Unity', 'AI']
-    const otherTags = ['PCG', 'Storytelling', 'Level Design']
+    const programmingTags = ['C#', 'C++', 'Python', 'JavaScript']
+    const otherTags = ['UE5', 'Unity', 'Procedural Generation', 'AI', 'Storytelling', 'Level Design', 'Shaders']
     
     // Get unique tags from all projects, separated by category
     const allProgrammingTags = ['all', ...new Set(projects.flatMap(project => 

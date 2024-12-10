@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
 import './ProjectModal.css';
-
+import githubIcon from '../../assets/social-icons/github.svg';
+import youtubeIcon from '../../assets/social-icons/youtube.svg';
+import itchIcon from '../../assets/social-icons/itchio.svg';
 const ProjectModal = ({ project, isOpen, onClose }) => {
     const [currentImageIndex, setCurrentImageIndex] = useState(0);
     
@@ -59,37 +61,46 @@ const ProjectModal = ({ project, isOpen, onClose }) => {
                         <h3>Overview</h3>
                         <p>{project.description}</p>
                         
-                        <h3>Key Features</h3>
+                        <h3>Details</h3>
                         <ul>
-                            <li>Feature 1: Lorem ipsum dolor sit amet</li>
-                            <li>Feature 2: Consectetur adipiscing elit</li>
-                            <li>Feature 3: Sed do eiusmod tempor incididunt</li>
+                            {project.details.map(detail => (
+                                <li key={detail}>{detail}</li>
+                            ))}
                         </ul>
-
-                        <h3>Technical Details</h3>
-                        <p>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-                            Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                        </p>
                     </div>
 
                     <div className="modal-links">
+                        {project.itchLink && (
+                            <a 
+                                href={project.itchLink} 
+                                className="modal-button secondary"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                            >
+                                <img className="modal-button-icon" src={itchIcon} alt="itch.io" />
+                                itch.io
+                            </a>
+                        )}
                         <a 
                             href={project.link} 
                             className="modal-button secondary"
                             target="_blank"
                             rel="noopener noreferrer"
                         >
+                            <img className="modal-button-icon" src={githubIcon} alt="GitHub" />
                             GitHub
                         </a>
-                        {/* <a 
-                            href={project.youtubeLink || '#'} 
-                            className="modal-button secondary"
-                            target="_blank"
-                            rel="noopener noreferrer"
+                        {project.youtubeLink && (
+                            <a 
+                                href={project.youtubeLink} 
+                                className="modal-button secondary"
+                                target="_blank"
+                                rel="noopener noreferrer"
                         >
+                            <img className="modal-button-icon" src={youtubeIcon} alt="YouTube" />
                             YouTube
-                        </a> */}
+                        </a>
+                        )}
                     </div>
                 </div>
             </div>

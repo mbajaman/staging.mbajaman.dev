@@ -20,6 +20,7 @@
     animation: fadeIn 0.5s ease;
     border-radius: 12px;
     overflow: hidden;
+    border:0.1em solid rgba(0, 0, 0, 0)
 }
 
 .project-card__inner {
@@ -32,6 +33,10 @@
     border: 1px solid rgba(74, 137, 220, 0.1);
     background: white;
     overflow: hidden;
+}
+
+.project-card:hover {
+    border:0.1em solid rgba(35, 115, 219, 0.726)
 }
 
 .project-card:hover .project-card__inner {

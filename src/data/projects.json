@@ -2,31 +2,51 @@
     "projects": [
         {
             "name": "HyperGOAP",
-            "description": "A simple open-world game created in UE5 showcasing procedural terrain generation by using Markov Chain Models along with Goal-Oriented Action Planning (GOAP) AI architecture for NPCs.",
+            "description": "A simple open-world game created in UE5 showcasing procedural terrain generation and GOAP AI.",
+            "details": [
+                "Procedural terrain generation using Markov Chain Models.",
+                "Objects and foliage placement to build a realistic open-world.",
+                "GOAP AI architecture for NPCs."
+            ],
             "images": [
                 "assets/project-media/hypergoap/hgoap-ai.png",
                 "assets/project-media/hypergoap/hgoap-ai2.png",
                 "assets/project-media/hypergoap/hgoap-markov-pcg-1.png",
                 "assets/project-media/hypergoap/hgoap-markov-pcg-2.png"
             ],
-            "github": "https://github.com/mbajaman/HyperGoap",
-            "tags": ["UE5", "PCG", "AI"]
+            "githubLink": "https://github.com/mbajaman/HyperGoap",
+            "tags": ["C++", "UE5", "Procedural Content Generation", "AI"]
         },
         {
             "name": "SAD",
-            "description": "A game engine created using C++ from the ground up with a team of 12 members. Game engine was created using ECS architecture. Engine features include: lighting, scripting, ray-casting, moving player-camera and rendering of 3D models and materials.",
+            "description": "A game engine created using C++ and ECS architecture.",
+            "details": [
+                "C++ game engine showcased with a shooter-survival game.",
+                "ECS architecture for game objects and components.",
+                "Include lighting, scripting and ray-casting.",
+                "Allows moving player-camera",
+                "Supportsrendering of 3D models and materials.",
+                "Cel-shading for rendering.",
+                "CI/CD pipeline for automated testing."
+            ],
             "images": [
                 "assets/project-media/sad/sad-1.png",
                 "assets/project-media/sad/sad-2.png",
                 "assets/project-media/sad/sad-3.png",
                 "assets/project-media/sad/sad-4.png"
             ],
-            "github": "https://github.com/mbajaman/SAD",
-            "tags": ["C++", "Game Engine"]
+            "githubLink": "https://github.com/mbajaman/SAD",
+            "tags": ["C++", "Game Engine", "Shaders"]
         },
         {
             "name": "Illume",
-            "description": "A visually story rich game made with a low poly art style that follows the story of a girl and the future of the forest.",
+            "description": "A visually story rich game that follows the story of a girl and the future of the forest.",
+            "details": [
+                "Made using Unity",
+                "Low poly art style.",
+                "Level design from moodboard to final implementation.",
+                "Storytelling and character development."
+            ],
             "images": [
                 "assets/project-media/illume/illume-logo.png",
                 "assets/project-media/illume/illume-landing.png",
@@ -37,12 +57,19 @@
                 "assets/project-media/illume/illume-ch3.png",
                 "assets/project-media/illume/illume-end.png"
             ],
-            "github": "https://github.com/mbajaman/Illume",
-            "tags": ["Unity", "Storytelling"]
+            "itchLink": "https://tmrocket.itch.io/illume",
+            "githubLink": "https://github.com/mbajaman/Illume",
+            "youtubeLink": "https://www.youtube.com/watch?v=e1dXPF0bLwg",
+            "tags": ["C#", "Unity", "Level Design", "Storytelling"]
         },
         {
             "name": "Focus Breakout",
-            "description": "A 3D adventure game made in Unity where you play as a target orb trying to survive and escape the aim trainer simulation, all while tackling obstacles and puzzles over levels of varying difficulty.",
+            "description": "A 3D adventure game where you play as a target orb trying to survive and escape the aim trainer simulation.",
+            "details": [
+                "Set in a simulation of a target training game.",
+                "3 levels of varying difficulty.",
+                "Puzzle and obstacle solving."
+            ],
             "images": [
                 "assets/project-media/focusbreakout/fb-logo.png",
                 "assets/project-media/focusbreakout/fb-menu.png",
@@ -52,8 +79,10 @@
                 "assets/project-media/focusbreakout/fb-lvl2-1.png",
                 "assets/project-media/focusbreakout/fb-score.png"
             ],
-            "github": "https://github.com/mbajaman/FocusBreakout",
-            "tags": ["Unity", "Level Design", "Action/Adventure"]
+            "itchLink": "https://mbajaman.itch.io/focus-breakout",
+            "githubLink": "https://github.com/mbajaman/FocusBreakout",
+            "youtubeLink": "https://www.youtube.com/watch?v=ah-MSnVxhL4",
+            "tags": ["C#", "Unity", "Level Design", "Action"]
         }
     ]
 }
