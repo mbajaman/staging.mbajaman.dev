@@ -2,23 +2,21 @@ import React, { useState, useEffect } from 'react'
 import { Link } from 'react-router-dom'
 import { TypeAnimation } from 'react-type-animation'
 import Navbar from '../../components/navbar/Navbar'
+import About from '../about/About'
+import Work from '../work/Work'
 import Footer from '../../components/footer/Footer'
 import './Home.css'
 
 // Import GIF Illustration
 import workGif from './work.gif'
 
-// Import skill card icons
-import uiIcon from '../../assets/skill-icons/code.svg'
-import gameIcon from '../../assets/skill-icons/gamepad.svg'
-import backendIcon from '../../assets/skill-icons/server.svg'
-import aiIcon from '../../assets/skill-icons/bot.svg'
-import webIcon from '../../assets/skill-icons/globe.svg'
-
 // Import social icons
 import githubIcon from '../../assets/social-icons/github.svg'
 import linkedinIcon from '../../assets/social-icons/linkedin.svg'
 import itchIcon from '../../assets/social-icons/itchio.svg'
+
+// Import Skills component
+import Skills from '../../components/skills/Skills'
 
 const Home = () => {
     const roles = [
@@ -34,35 +32,6 @@ const Home = () => {
         2000,
         'AI Programmer',
         2000
-    ];
-
-    const skillCards = [
-        {
-            icon: uiIcon,
-            title: "Software Engineering",
-            description: "Building scalable and efficient software solutions"
-        },
-        {
-            icon: gameIcon,
-            title: "Game Development",
-            description: "Developing engaging gaming experiences"
-        },
-        {
-            icon: backendIcon,
-            title: "IT Solutions",
-            description: "Building and securing IT applications"
-        },
-        {
-            icon: aiIcon,
-            title: "AI Programming",
-            description: "Training and deploying AI models"
-        },
-        {
-            icon: webIcon,
-            title: "Web Development",
-            description: "Crafting modern and responsive web applications"
-        },
-
     ];
 
     const socialLinks = [
@@ -94,7 +63,7 @@ const Home = () => {
     }, []);
 
     return (
-        <div className="home-container">
+        <div id="home" className="home-container">
             <Navbar />
             
             <main className="home-content">
@@ -150,26 +119,10 @@ const Home = () => {
                     </div>
                 </div>
 
-                <section className="skills-section section-tracker">
-                    <h2 className="section-title">Skills</h2>
-                    
-                    <div className="skills-grid">
-                        {skillCards.map((card, index) => (
-                            <div className="skill-card" key={index}>
-                                <img 
-                                    src={card.icon} 
-                                    alt={card.title}
-                                    className="skill-icon"
-                                />
-                                <h4>{card.title}</h4>
-                                <p>{card.description}</p>
-                            </div>
-                        ))}
-                    </div>
-                </section>
-
-                <div className="timeline-indicator">
-                    {[0, 1].map((index) => (
+                <Skills />
+                { /* ##### Commented out time-line indicator ##### */ }
+                {/* <div className="timeline-indicator">
+                    {[0, 1, 2, 3].map((index) => (
                         <div
                             key={index}
                             className={`dot ${activeSection === index ? 'active' : ''}`}
@@ -179,9 +132,10 @@ const Home = () => {
                             }}
                         />
                     ))}
-                </div>
+                </div> */}
             </main>
-            
+            <Work />
+            <About />
             <Footer />
         </div>
     )
