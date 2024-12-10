@@ -140,10 +140,12 @@
 
 .peeking-icons {
     position: absolute;
-    width: 100%;
+    width: 90%;
     height: 0;
     bottom: calc(100% + 48px);
     left: 0;
+    right: 0;
+    margin: 0 auto;
     display: flex;
     justify-content: space-around;
 }
@@ -163,20 +165,24 @@
     filter: drop-shadow(0 4px 6px rgba(0, 0, 0, 0.1));
 }
 
-.peek-icon-wrapper.lol {
-    transform: translateY(24px) rotate(-15deg);
-}
-
 .peek-icon-wrapper.gamepad {
-    transform: translateY(24px) rotate(10deg);
-}
-
-.peek-icon-wrapper.bado {
     transform: translateY(24px) rotate(-8deg);
 }
 
+.peek-icon-wrapper.bado {
+    transform: translateY(24px) rotate(8deg);
+}
+
+.peek-icon-wrapper.lol {
+    transform: translateY(24px) rotate(10deg);
+}
+
+.peek-icon-wrapper.travel {
+    transform: translateY(24px) rotate(8deg);
+}
+
 .peek-icon-wrapper.esports {
-    transform: translateY(24px) rotate(12deg);
+    transform: translateY(24px) rotate(-8deg);
 }
 
 .peek-icon-wrapper:hover {
@@ -218,6 +224,15 @@
     opacity: 1;
     visibility: visible;
     transform: translateX(-50%) translateY(0);
+}
+
+.flag-icon {
+    width: 20px;
+    height: 15px;
+    vertical-align: middle;
+    margin: 0 2px;
+    display: inline-block;
+    border-radius: 2px;
 }
 
 @media (max-width: 1024px) {

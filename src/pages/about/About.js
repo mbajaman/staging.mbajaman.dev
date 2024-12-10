@@ -3,11 +3,23 @@ import Navbar from '../../components/navbar/Navbar'
 import Footer from '../../components/footer/Footer'
 import './About.css'
 
+// Import selfie 📱
 import placeholderImage from '../../assets/profile.jpg'
-import lolIcon from '../../assets/about-icons/wr_lol.png'
+
+// Import info icons
 import gamepadIcon from '../../assets/about-icons/gamepad.svg'
 import badoIcon from '../../assets/about-icons/bado.svg'
+import lolIcon from '../../assets/about-icons/wr_lol.png'
+import travelIcon from '../../assets/about-icons/travel.svg'
 import esportsIcon from '../../assets/about-icons/esports.svg'
+
+// Import flags
+import usaFlag from '../../assets/flag-icons/flag_us.svg';
+import netherlandsFlag from '../../assets/flag-icons/flag_nl.svg';
+import belgiumFlag from '../../assets/flag-icons/flag_be.svg';
+import saudiFlag from '../../assets/flag-icons/flag_sa.svg';
+import indiaFlag from '../../assets/flag-icons/flag_in.svg';
+import uaeFlag from '../../assets/flag-icons/flag_ae.svg';
 
 const About = () => {
     return (
@@ -68,6 +80,17 @@ const About = () => {
                                     <div className="peek-icon-wrapper lol">
                                         <img src={lolIcon} alt="League of Legends" className="peek-icon" />
                                         <div className="chat-bubble">Top 1% in EMEA WildRift 😎</div>
+                                    </div>
+                                    <div className="peek-icon-wrapper travel">
+                                        <img src={travelIcon} alt="Travel" className="peek-icon" />
+                                        <div className="chat-bubble">2023
+                                            <img src={usaFlag} alt="USA" className="flag-icon" />
+                                            <img src={netherlandsFlag} alt="Netherlands" className="flag-icon" />
+                                            <img src={belgiumFlag} alt="Belgium" className="flag-icon" />
+                                            <img src={saudiFlag} alt="Saudi Arabia" className="flag-icon" />
+                                            <img src={indiaFlag} alt="India" className="flag-icon" />
+                                            <img src={uaeFlag} alt="UAE" className="flag-icon" />
+                                        </div>
                                     </div>
                                     <div className="peek-icon-wrapper esports">
                                         <img src={esportsIcon} alt="E-Sports" className="peek-icon" />
