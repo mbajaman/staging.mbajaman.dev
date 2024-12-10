@@ -1,10 +1,12 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import './ProjectModal.css';
 import githubIcon from '../../assets/social-icons/github.svg';
 import youtubeIcon from '../../assets/social-icons/youtube.svg';
 import itchIcon from '../../assets/social-icons/itchio.svg';
+
 const ProjectModal = ({ project, isOpen, onClose }) => {
     const [currentImageIndex, setCurrentImageIndex] = useState(0);
+    const [loadedImages, setLoadedImages] = useState([]);
     
     // Function to get image URL dynamically
     const getImageUrl = (imagePath) => {
@@ -17,6 +19,29 @@ const ProjectModal = ({ project, isOpen, onClose }) => {
 
     // Get all image URLs
     const images = project.images?.map(path => getImageUrl(path)) || [];
+
+    // Preload images when modal opens
+    useEffect(() => {
+        if (isOpen) {
+            const preloadImages = images.map((src) => {
+                return new Promise((resolve, reject) => {
+                    const img = new Image();
+                    img.src = src;
+                    img.onload = () => {
+                        setLoadedImages(prev => [...prev, src]);
+                        resolve(src);
+                    };
+                    img.onerror = reject;
+                });
+            });
+
+            Promise.all(preloadImages)
+                .catch(error => console.error('Error preloading images:', error));
+        } else {
+            // Clear loaded images when modal closes
+            setLoadedImages([]);
+        }
+    }, [isOpen, images]);
 
     const nextImage = () => {
         setCurrentImageIndex((prev) => (prev + 1) % images.length);
@@ -34,15 +59,50 @@ const ProjectModal = ({ project, isOpen, onClose }) => {
                 <button className="modal-close" onClick={onClose}>&times;</button>
                 
                 <div className="modal-gallery">
-                    <button className="gallery-nav prev" onClick={prevImage}>&lt;</button>
-                    <img src={images[currentImageIndex]} alt={`${project.name} ${currentImageIndex + 1}`} />
-                    <button className="gallery-nav next" onClick={nextImage}>&gt;</button>
+
+                    
+                    {/* Image container with loading state */}
+                    <div className="modal-image-container">
+                        {images.map((src, index) => (
+                            <img
+                                key={src}
+                                src={src}
+                                alt={`${project.name} ${index + 1}`}
+                                className={`modal-image ${index === currentImageIndex ? 'active' : ''}`}
+                                style={{ 
+                                    opacity: loadedImages.includes(src) ? 1 : 0,
+                                    display: index === currentImageIndex ? 'block' : 'none'
+                                }}
+                            />
+                        ))}
+                        {!loadedImages.includes(images[currentImageIndex]) && (
+                            <div className="modal-image-loader">Loading...</div>
+                        )}
+                    </div>
+                    
+                    <button 
+                        className="gallery-nav prev" 
+                        onClick={prevImage}
+                        aria-label="Previous image"
+                    >
+                        &lt;
+                    </button>
+
+                    <button 
+                        className="gallery-nav next" 
+                        onClick={nextImage}
+                        aria-label="Next image"
+                    >
+                        &gt;
+                    </button>
+                    
                     <div className="gallery-dots">
                         {images.map((_, index) => (
-                            <span 
-                                key={index} 
-                                className={`dot ${index === currentImageIndex ? 'active' : ''}`}
+                            <button
+                                key={index}
+                                className={`gallery-dot ${index === currentImageIndex ? 'active' : ''}`}
                                 onClick={() => setCurrentImageIndex(index)}
+                                aria-label={`Go to image ${index + 1}`}
                             />
                         ))}
                     </div>
