@@ -76,20 +76,20 @@ const ProjectModal = ({ project, isOpen, onClose }) => {
                     <div className="modal-links">
                         <a 
                             href={project.link} 
-                            className="modal-button primary"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                        >
-                            Live Demo
-                        </a>
-                        <a 
-                            href={project.github || '#'} 
                             className="modal-button secondary"
                             target="_blank"
                             rel="noopener noreferrer"
                         >
-                            View Code
+                            GitHub
                         </a>
+                        {/* <a 
+                            href={project.youtubeLink || '#'} 
+                            className="modal-button secondary"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            YouTube
+                        </a> */}
                     </div>
                 </div>
             </div>

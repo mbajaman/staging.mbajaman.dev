@@ -123,6 +123,7 @@ const Project = () => {
                                 </div>
                                 <p className="project-card__description">{project.description}</p>
                                 <a 
+                                    href={project.link}
                                     onClick={(e) => {
                                         e.preventDefault()
                                         openModal(project)

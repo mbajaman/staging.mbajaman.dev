@@ -58,7 +58,7 @@
 
 .project-card__title {
     margin: 0.5rem 0;
-    color: #4a89dc;
+    color: #0984e3;
     font-size: 1.2rem;
     padding: 0 1rem;
 }
@@ -112,7 +112,7 @@
 }
 
 .project-card__tag {
-    background: #4a89dc;
+    background: #0984e3;
     padding: 0.25rem 0.75rem;
     border-radius: 15px;
     font-size: 0.8rem;
@@ -123,7 +123,7 @@
 
 .project-card__tags--overlay .project-card__tag {
     background: rgba(74, 137, 220, 0.08);
-    color: #4a89dc;
+    color: #0984e3;
     text-shadow: none;
     border: none;
 }
@@ -157,7 +157,7 @@
 .project-card__link {
     display: inline-block;
     padding: 0.5rem 1.25rem;
-    background-color: #4a89dc;
+    background-color: #0984e3;
     color: white;
     text-decoration: none;
     border-radius: 25px;
@@ -224,7 +224,7 @@
     border-radius: 25px;
     border: 1px solid rgba(74, 137, 220, 0.2);
     background: transparent;
-    color: #4a89dc;
+    color: #0984e3;
     cursor: pointer;
     font-size: 0.9rem;
     transition: all 0.3s ease;
@@ -236,9 +236,9 @@
 }
 
 .filter-tag.active {
-    background: #4a89dc;
+    background: #0984e3;
     color: white;
-    border-color: #4a89dc;
+    border-color: #0984e3;
 }
 
 .filter-divider {

@@ -9,7 +9,7 @@
                 "assets/project-media/hypergoap/hgoap-markov-pcg-1.png",
                 "assets/project-media/hypergoap/hgoap-markov-pcg-2.png"
             ],
-            "link": "https://github.com/mbajaman/HyperGoap",
+            "github": "https://github.com/mbajaman/HyperGoap",
             "tags": ["UE5", "PCG", "AI"]
         },
         {
@@ -24,7 +24,7 @@
                 "assets/project-media/illume/illume-ch3.png",
                 "assets/project-media/illume/illume-end.png"
             ],
-            "link": "https://github.com/mbajaman/Illume",
+            "github": "https://github.com/mbajaman/Illume",
             "tags": ["Unity", "Storytelling"]
         },
         {
@@ -38,7 +38,7 @@
                 "assets/project-media/focusbreakout/fb-lvl2-1.png",
                 "assets/project-media/focusbreakout/fb-score.png"
             ],
-            "link": "https://github.com/mbajaman/FocusBreakout",
+            "github": "https://github.com/mbajaman/FocusBreakout",
             "tags": ["Unity", "Level Design", "Action/Adventure"]
         },
         {
@@ -50,7 +50,7 @@
                 "assets/project-media/sad/sad-3.png",
                 "assets/project-media/sad/sad-4.png"
             ],
-            "link": "https://github.com/mbajaman/SAD",
+            "github": "https://github.com/mbajaman/SAD",
             "tags": ["C++", "Game Engine"]
         }
     ]
