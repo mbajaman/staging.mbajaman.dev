@@ -129,7 +129,8 @@ const Home = () => {
                                     View My Work
                                 </Link>
                                 <Link to="https://www.linkedin.com/in/mbajaman/" className="secondary-button">
-                                    Let's Connect
+                                <img src={linkedinIcon} alt="LinkedIn" className='button-icon'/>
+                                Let's Connect
                                 </Link>
                             </div>
                         </div>

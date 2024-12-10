@@ -3,29 +3,54 @@
         {
             "name": "HyperGOAP",
             "description": "A simple open-world game created in UE5 showcasing procedural terrain generation by using Markov Chain Models along with Goal-Oriented Action Planning (GOAP) AI architecture for NPCs.",
-            "images": ["path/to/image1.jpg", "path/to/image2.jpg"],
-            "link": "https://example.com",
+            "images": [
+                "assets/project-media/hypergoap/hgoap-ai.png", 
+                "assets/project-media/hypergoap/hgoap-ai2.png",
+                "assets/project-media/hypergoap/hgoap-markov-pcg-1.png",
+                "assets/project-media/hypergoap/hgoap-markov-pcg-2.png"
+            ],
+            "link": "https://github.com/mbajaman/HyperGoap",
             "tags": ["UE5", "PCG", "AI"]
         },
         {
             "name": "Illume",
             "description": "A visually story rich game made with a low poly art style that follows the story of a girl and the future of the forest.",
-            "images": ["path/to/image1.jpg", "path/to/image2.jpg"],
-            "link": "https://example.com",
+            "images": [
+                "assets/project-media/illume/illume-landing.png",
+                "assets/project-media/illume/illume-start.png",
+                "assets/project-media/illume/illume-ch1.png",
+                "assets/project-media/illume/illume-ch2.png",
+                "assets/project-media/illume/illume-cave.png",
+                "assets/project-media/illume/illume-ch3.png",
+                "assets/project-media/illume/illume-end.png"
+            ],
+            "link": "https://github.com/mbajaman/Illume",
             "tags": ["Unity", "Storytelling"]
         },
         {
             "name": "Focus Breakout",
             "description": "A 3D adventure game made in Unity where you play as a target orb trying to survive and escape the aim trainer simulation, all while tackling obstacles and puzzles over levels of varying difficulty.",
-            "images": ["path/to/image1.jpg", "path/to/image2.jpg"],
-            "link": "https://example.com",
+            "images": [
+                "assets/project-media/focusbreakout/fb-menu.png",
+                "assets/project-media/focusbreakout/fb-intro.png",
+                "assets/project-media/focusbreakout/fb-lvl1.png",
+                "assets/project-media/focusbreakout/fb-lvl2.png",
+                "assets/project-media/focusbreakout/fb-lvl2-1.png",
+                "assets/project-media/focusbreakout/fb-score.png"
+            ],
+            "link": "https://github.com/mbajaman/FocusBreakout",
             "tags": ["Unity", "Level Design", "Action/Adventure"]
         },
         {
             "name": "SAD",
             "description": "A game engine created using C++ from the ground up with a team of 12 members. Game engine was created using ECS architecture. Engine features include: lighting, scripting, ray-casting, moving player-camera and rendering of 3D models and materials.",
-            "images": ["path/to/image1.jpg", "path/to/image2.jpg"],
-            "link": "https://example.com",
+            "images": [
+                "assets/project-media/sad/sad-1.png",
+                "assets/project-media/sad/sad-2.png",
+                "assets/project-media/sad/sad-3.png",
+                "assets/project-media/sad/sad-4.png"
+            ],
+            "link": "https://github.com/mbajaman/SAD",
             "tags": ["C++", "Game Engine"]
         }
     ]

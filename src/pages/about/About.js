@@ -23,7 +23,7 @@ const About = () => {
                     
                     <div className="about-text">
                         <h1 className="section-title">About Me</h1>
-                        <p className="subtitle">Software Engineer & Game Developer</p>
+                        <p className="subtitle">Software Engineer | Game Developer | IT Expert</p>
                         
                         <div className="about-description">
                             <p>
@@ -34,7 +34,7 @@ const About = () => {
                             </p>
                             
                             <p>
-                                With a background in software engineering, IT, game dev and AI, 
+                                With a background in software engineering, game dev, AI, and 5+ years in IT,
                                 I bring a unique perspective to problem-solving. I enjoy learning
                                 new things and applying them to real-world problems.
                             </p>

@@ -4,12 +4,17 @@ import './ProjectModal.css';
 const ProjectModal = ({ project, isOpen, onClose }) => {
     const [currentImageIndex, setCurrentImageIndex] = useState(0);
     
-    // Placeholder images - replace these with actual project images
-    const images = [
-        'https://placehold.co/600x400/png',
-        'https://placehold.co/600x400/png',
-        'https://placehold.co/600x400/png'
-    ];
+    // Function to get image URL dynamically
+    const getImageUrl = (imagePath) => {
+        try {
+            return require(`../../${imagePath}`)
+        } catch (err) {
+            return 'https://placehold.co/600x400/png'
+        }
+    }
+
+    // Get all image URLs
+    const images = project.images?.map(path => getImageUrl(path)) || [];
 
     const nextImage = () => {
         setCurrentImageIndex((prev) => (prev + 1) % images.length);

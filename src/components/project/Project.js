@@ -9,6 +9,15 @@ const Project = () => {
     const [filteredProjects, setFilteredProjects] = useState(projects)
     const [selectedProject, setSelectedProject] = useState(null)
     
+    // Function to get image URL dynamically
+    const getImageUrl = (imagePath) => {
+        try {
+            return require(`../../${imagePath}`)
+        } catch (err) {
+            return 'https://placehold.co/600x400/png'
+        }
+    }
+
     // Separate programming languages from other tags
     const programmingTags = ['React', 'Node.js', 'TypeScript', 'C#', 'UE5', 'Unity', 'AI']
     const otherTags = ['PCG', 'Storytelling', 'Level Design']
@@ -91,7 +100,7 @@ const Project = () => {
                         <div className="project-card__inner">
                             <div className="project-card__image">
                                 <img 
-                                    src={`https://placehold.co/600x400/png`} 
+                                    src={project.images[0] ? getImageUrl(project.images[0]) : 'https://placehold.co/600x400/png'}
                                     alt={project.name}
                                 />
                             </div>
