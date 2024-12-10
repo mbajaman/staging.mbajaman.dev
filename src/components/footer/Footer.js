@@ -20,12 +20,6 @@ const Footer = () => {
                 <p className="footer__copyright">
                     © {new Date().getFullYear()} Mohammed Bajaman
                 </p>
-                
-                <div className="footer__links">
-                    <Link to="/">Home</Link>
-                    <Link to="/portfolio">Work</Link>
-                    <Link to="/about">About</Link>
-                </div>
 
                 <div className="footer__social-links">
                     {socialLinks.map((link) => (

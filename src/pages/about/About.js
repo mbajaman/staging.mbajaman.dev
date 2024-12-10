@@ -23,10 +23,8 @@ import uaeFlag from '../../assets/flag-icons/flag_ae.svg';
 
 const About = () => {
     return (
-        <div className="about-container">
-            <Navbar />
-            
-            <main className="about-content">
+        <div id="about" className="about-container section-tracker">
+            <section id="about" className="about-content">
                 <div className="about-section">
                     <div className="about-image">
                         <img src={placeholderImage} alt="Mohammed Bajaman" />
@@ -102,9 +100,7 @@ const About = () => {
                         </div>
                     </div>
                 </div>
-            </main>
-
-            <Footer />
+            </section>
         </div>
     )
 }
