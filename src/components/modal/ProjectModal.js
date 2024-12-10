@@ -82,7 +82,7 @@ const ProjectModal = ({ project, isOpen, onClose }) => {
                             </a>
                         )}
                         <a 
-                            href={project.link} 
+                            href={project.githubLink} 
                             className="modal-button secondary"
                             target="_blank"
                             rel="noopener noreferrer"

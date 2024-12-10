@@ -9,7 +9,7 @@
     justify-content: center;
     align-items: center;
     z-index: 1100;
-    padding: 2rem;
+    padding: 1rem;
     animation: fadeIn 0.3s ease;
 }
 
@@ -24,6 +24,8 @@
     overflow: hidden;
     position: relative;
     animation: slideUp 0.3s ease;
+    height: auto;
+    max-height: 90vh;
 }
 
 .modal-close {
@@ -142,6 +144,7 @@
     display: flex;
     gap: 1rem;
     margin-top: 2rem;
+    flex-wrap: wrap;
 }
 
 .modal-button {
@@ -150,6 +153,12 @@
     text-decoration: none;
     font-weight: 500;
     transition: all 0.3s ease;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 120px;
+    flex: 1;
+    text-align: center;
 }
 
 .modal-button.primary {
@@ -191,16 +200,24 @@
 }
 
 @media (max-width: 768px) {
+    .modal-overlay {
+        padding: 0.5rem;
+    }
+
     .modal-content {
         grid-template-columns: 1fr;
-        max-height: 100vh;
+        width: 100%;
+        max-height: 98vh;
         height: auto;
+        display: flex;
+        flex-direction: column;
     }
 
     .modal-gallery {
-        height: auto;
-        aspect-ratio: 16/9;
-        max-height: 50vh;
+        height: 40vh;
+        min-height: 200px;
+        max-height: 40vh;
+        aspect-ratio: auto;
     }
 
     .modal-gallery img {
@@ -208,8 +225,42 @@
     }
 
     .modal-details {
-        padding: 1.5rem;
-        max-height: 50vh;
+        padding: 1rem;
+        height: auto;
+        max-height: 55vh;
         overflow-y: auto;
+        flex: 1;
+    }
+
+    .modal-links {
+        gap: 0.75rem;
+    }
+
+    .modal-button {
+        padding: 0.6rem 1rem;
+        min-width: 100px;
+        font-size: 0.9rem;
+    }
+
+    .modal-button img {
+        width: 16px;
+        height: 16px;
+    }
+}
+
+@media (max-height: 600px) {
+    .modal-gallery {
+        height: 35vh;
+        min-height: 150px;
+    }
+
+    .modal-details {
+        max-height: 50vh;
+    }
+}
+
+@media (max-width: 480px) {
+    .modal-button {
+        flex: 1 1 100%;
     }
 } 
