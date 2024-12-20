@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.c712ebdc.css",
-    "main.js": "/static/js/main.75648dde.js",
+    "main.css": "/static/css/main.16b79b31.css",
+    "main.js": "/static/js/main.0010d71c.js",
     "static/js/453.81a0e1db.chunk.js": "/static/js/453.81a0e1db.chunk.js",
     "static/media/illume-logo.png": "/static/media/illume-logo.6ed295d9a7735fa6d2c1.png",
     "static/media/fb-lvl1.png": "/static/media/fb-lvl1.560d2a11251ffdccfbb4.png",
@@ -66,12 +66,12 @@
     "static/media/linkedin.svg": "/static/media/linkedin.566bbcbeea50b3c2739a65f8aab3689e.svg",
     "static/media/code-1.svg": "/static/media/code-1.65044e13005e89015f81.svg",
     "static/media/server.svg": "/static/media/server.53c7411ee19f545352ff.svg",
-    "main.c712ebdc.css.map": "/static/css/main.c712ebdc.css.map",
-    "main.75648dde.js.map": "/static/js/main.75648dde.js.map",
+    "main.16b79b31.css.map": "/static/css/main.16b79b31.css.map",
+    "main.0010d71c.js.map": "/static/js/main.0010d71c.js.map",
     "453.81a0e1db.chunk.js.map": "/static/js/453.81a0e1db.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.c712ebdc.css",
-    "static/js/main.75648dde.js"
+    "static/css/main.16b79b31.css",
+    "static/js/main.0010d71c.js"
   ]
 }
