@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.2ba7cded.css",
-    "main.js": "/static/js/main.b997fd9e.js",
+    "main.js": "/static/js/main.c99e4959.js",
     "static/js/453.81a0e1db.chunk.js": "/static/js/453.81a0e1db.chunk.js",
     "static/media/illume-logo.png": "/static/media/illume-logo.6ed295d9a7735fa6d2c1.png",
     "static/media/fb-lvl1.png": "/static/media/fb-lvl1.560d2a11251ffdccfbb4.png",
@@ -30,7 +30,8 @@
     "static/media/fb-score.png": "/static/media/fb-score.6c99ce4274b7e5b38241.png",
     "static/media/hamstars-3.png": "/static/media/hamstars-3.505f81ccf410db48bc9f.png",
     "static/media/hgoap-ai2.png": "/static/media/hgoap-ai2.9556e4089d810303a83b.png",
-    "static/media/site-image.png": "/static/media/site-image.4e55bb4e7ecfd1494479.png",
+    "static/media/site-image.old.png": "/static/media/site-image.old.4e55bb4e7ecfd1494479.png",
+    "static/media/site-image.png": "/static/media/site-image.a4a164d28b452049e704.png",
     "static/media/test.png": "/static/media/test.02a051a8a6e483c4111a.png",
     "static/media/work.png": "/static/media/work.c55ecd35735f25ef5321.png",
     "static/media/cownado-2.png": "/static/media/cownado-2.2fcd8f3595ef481a33af.png",
@@ -69,14 +70,13 @@
     "static/media/bot.svg": "/static/media/bot.67a2f749e774f1324aae.svg",
     "static/media/linkedin-about.svg": "/static/media/linkedin-about.e6a69c0c8c0cf3a3c9724df08b87e373.svg",
     "static/media/linkedin.svg": "/static/media/linkedin.566bbcbeea50b3c2739a65f8aab3689e.svg",
-    "static/media/code-1.svg": "/static/media/code-1.65044e13005e89015f81.svg",
     "static/media/server.svg": "/static/media/server.53c7411ee19f545352ff.svg",
     "main.2ba7cded.css.map": "/static/css/main.2ba7cded.css.map",
-    "main.b997fd9e.js.map": "/static/js/main.b997fd9e.js.map",
+    "main.c99e4959.js.map": "/static/js/main.c99e4959.js.map",
     "453.81a0e1db.chunk.js.map": "/static/js/453.81a0e1db.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.2ba7cded.css",
-    "static/js/main.b997fd9e.js"
+    "static/js/main.c99e4959.js"
   ]
 }
