@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.b603d02d.css",
-    "main.js": "/static/js/main.53e6f84b.js",
+    "main.css": "/static/css/main.2ba7cded.css",
+    "main.js": "/static/js/main.b997fd9e.js",
     "static/js/453.81a0e1db.chunk.js": "/static/js/453.81a0e1db.chunk.js",
     "static/media/illume-logo.png": "/static/media/illume-logo.6ed295d9a7735fa6d2c1.png",
     "static/media/fb-lvl1.png": "/static/media/fb-lvl1.560d2a11251ffdccfbb4.png",
@@ -67,15 +67,16 @@
     "static/media/flag_nl.svg": "/static/media/flag_nl.f5a54a3b50006fbe7f378cb42eb941e2.svg",
     "static/media/globe.svg": "/static/media/globe.fd53e70a2b56e9258e77.svg",
     "static/media/bot.svg": "/static/media/bot.67a2f749e774f1324aae.svg",
+    "static/media/linkedin-about.svg": "/static/media/linkedin-about.e6a69c0c8c0cf3a3c9724df08b87e373.svg",
     "static/media/linkedin.svg": "/static/media/linkedin.566bbcbeea50b3c2739a65f8aab3689e.svg",
     "static/media/code-1.svg": "/static/media/code-1.65044e13005e89015f81.svg",
     "static/media/server.svg": "/static/media/server.53c7411ee19f545352ff.svg",
-    "main.b603d02d.css.map": "/static/css/main.b603d02d.css.map",
-    "main.53e6f84b.js.map": "/static/js/main.53e6f84b.js.map",
+    "main.2ba7cded.css.map": "/static/css/main.2ba7cded.css.map",
+    "main.b997fd9e.js.map": "/static/js/main.b997fd9e.js.map",
     "453.81a0e1db.chunk.js.map": "/static/js/453.81a0e1db.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.b603d02d.css",
-    "static/js/main.53e6f84b.js"
+    "static/css/main.2ba7cded.css",
+    "static/js/main.b997fd9e.js"
   ]
 }
