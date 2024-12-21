@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.30d7c823.css",
-    "main.js": "/static/js/main.e67d79eb.js",
+    "main.css": "/static/css/main.69d7820d.css",
+    "main.js": "/static/js/main.871e4f7a.js",
     "static/js/453.81a0e1db.chunk.js": "/static/js/453.81a0e1db.chunk.js",
     "static/media/illume-logo.png": "/static/media/illume-logo.6ed295d9a7735fa6d2c1.png",
     "static/media/fb-lvl1.png": "/static/media/fb-lvl1.560d2a11251ffdccfbb4.png",
@@ -33,22 +33,23 @@
     "static/media/site-image.png": "/static/media/site-image.4e55bb4e7ecfd1494479.png",
     "static/media/cownado-2.png": "/static/media/cownado-2.2fcd8f3595ef481a33af.png",
     "static/media/trialdatecalc.jpg": "/static/media/trialdatecalc.eb2b325b13adbedf394e.jpg",
+    "static/media/sad.png": "/static/media/sad.7bea67300d85feb9b3e9.png",
     "static/media/octopations-1.png": "/static/media/octopations-1.18ad3b85938b4bfb868e.png",
-    "static/media/sad.png": "/static/media/sad.18987e1c2d9481881ce4.png",
-    "static/media/sad-2.png": "/static/media/sad-2.dbdac53095514e8516ee.png",
+    "static/media/sad-1.png": "/static/media/sad-1.18987e1c2d9481881ce4.png",
+    "static/media/sad-3.png": "/static/media/sad-3.dbdac53095514e8516ee.png",
     "static/media/octopations.png": "/static/media/octopations.d99c32b304251ca2dc82.png",
-    "static/media/sad-1.png": "/static/media/sad-1.b15a181b89db68524823.png",
+    "static/media/sad-2.png": "/static/media/sad-2.b15a181b89db68524823.png",
     "static/media/octopations-2.png": "/static/media/octopations-2.b933d14e3c4f1684a499.png",
     "static/media/wid.jpg": "/static/media/wid.33bb4efecf4d88da37a6.jpg",
     "static/media/cownado-1.png": "/static/media/cownado-1.d16245c84cc7229333c3.png",
-    "static/media/sad-3.png": "/static/media/sad-3.ae054676bf583148ab0f.png",
+    "static/media/sad-4.png": "/static/media/sad-4.ae054676bf583148ab0f.png",
     "static/media/flag_sa.svg": "/static/media/flag_sa.c7a5f6793d0afa46f4c4e4a4eae86115.svg",
     "static/media/flag_us.svg": "/static/media/flag_us.65b9fb1a40d8e94a1b0a8600487da3ad.svg",
     "static/media/wr_lol.png": "/static/media/wr_lol.3fe76d3bcc099c90a099.png",
     "static/media/gamepad.svg": "/static/media/gamepad.1782697f488da6caa45e.svg",
     "static/media/travel.svg": "/static/media/travel.1083d1290f51a6e123d9d8beb2703342.svg",
     "static/media/bado.svg": "/static/media/bado.65d818924500eada1eb9e0072de30229.svg",
-    "static/media/esports.svg": "/static/media/esports.3ae92f4a48414d52499d490d945d6026.svg",
+    "static/media/esports.svg": "/static/media/esports.a6c149815c6ce5d0c08fdd3884a2e1b3.svg",
     "static/media/flag_in.svg": "/static/media/flag_in.f1392c76f9306f0347708164f7ab0498.svg",
     "static/media/itchio.svg": "/static/media/itchio.b7d017071651de4e5cf71fe9f36d317a.svg",
     "static/media/github.svg": "/static/media/github.8878fd7b0099db90dae7f405a4cd5494.svg",
@@ -66,12 +67,12 @@
     "static/media/linkedin.svg": "/static/media/linkedin.566bbcbeea50b3c2739a65f8aab3689e.svg",
     "static/media/code-1.svg": "/static/media/code-1.65044e13005e89015f81.svg",
     "static/media/server.svg": "/static/media/server.53c7411ee19f545352ff.svg",
-    "main.30d7c823.css.map": "/static/css/main.30d7c823.css.map",
-    "main.e67d79eb.js.map": "/static/js/main.e67d79eb.js.map",
+    "main.69d7820d.css.map": "/static/css/main.69d7820d.css.map",
+    "main.871e4f7a.js.map": "/static/js/main.871e4f7a.js.map",
     "453.81a0e1db.chunk.js.map": "/static/js/453.81a0e1db.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.30d7c823.css",
-    "static/js/main.e67d79eb.js"
+    "static/css/main.69d7820d.css",
+    "static/js/main.871e4f7a.js"
   ]
 }
