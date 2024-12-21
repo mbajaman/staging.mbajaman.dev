@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.69d7820d.css",
-    "main.js": "/static/js/main.871e4f7a.js",
+    "main.css": "/static/css/main.f7633751.css",
+    "main.js": "/static/js/main.f0bed83f.js",
     "static/js/453.81a0e1db.chunk.js": "/static/js/453.81a0e1db.chunk.js",
     "static/media/illume-logo.png": "/static/media/illume-logo.6ed295d9a7735fa6d2c1.png",
     "static/media/fb-lvl1.png": "/static/media/fb-lvl1.560d2a11251ffdccfbb4.png",
@@ -31,9 +31,12 @@
     "static/media/hamstars-3.png": "/static/media/hamstars-3.505f81ccf410db48bc9f.png",
     "static/media/hgoap-ai2.png": "/static/media/hgoap-ai2.9556e4089d810303a83b.png",
     "static/media/site-image.png": "/static/media/site-image.4e55bb4e7ecfd1494479.png",
+    "static/media/test.png": "/static/media/test.02a051a8a6e483c4111a.png",
+    "static/media/work.png": "/static/media/work.c55ecd35735f25ef5321.png",
     "static/media/cownado-2.png": "/static/media/cownado-2.2fcd8f3595ef481a33af.png",
     "static/media/trialdatecalc.jpg": "/static/media/trialdatecalc.eb2b325b13adbedf394e.jpg",
     "static/media/sad.png": "/static/media/sad.7bea67300d85feb9b3e9.png",
+    "static/media/test.jpg": "/static/media/test.812bfe4e443dab2cb949.jpg",
     "static/media/octopations-1.png": "/static/media/octopations-1.18ad3b85938b4bfb868e.png",
     "static/media/sad-1.png": "/static/media/sad-1.18987e1c2d9481881ce4.png",
     "static/media/sad-3.png": "/static/media/sad-3.dbdac53095514e8516ee.png",
@@ -67,12 +70,12 @@
     "static/media/linkedin.svg": "/static/media/linkedin.566bbcbeea50b3c2739a65f8aab3689e.svg",
     "static/media/code-1.svg": "/static/media/code-1.65044e13005e89015f81.svg",
     "static/media/server.svg": "/static/media/server.53c7411ee19f545352ff.svg",
-    "main.69d7820d.css.map": "/static/css/main.69d7820d.css.map",
-    "main.871e4f7a.js.map": "/static/js/main.871e4f7a.js.map",
+    "main.f7633751.css.map": "/static/css/main.f7633751.css.map",
+    "main.f0bed83f.js.map": "/static/js/main.f0bed83f.js.map",
     "453.81a0e1db.chunk.js.map": "/static/js/453.81a0e1db.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.69d7820d.css",
-    "static/js/main.871e4f7a.js"
+    "static/css/main.f7633751.css",
+    "static/js/main.f0bed83f.js"
   ]
 }
