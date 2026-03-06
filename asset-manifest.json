@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.f79f045f.css",
-    "main.js": "/static/js/main.bafe2dd1.js",
+    "main.js": "/static/js/main.5fc0fc63.js",
     "static/js/453.28e11700.chunk.js": "/static/js/453.28e11700.chunk.js",
     "static/media/bianbeat-1.png": "/static/media/bianbeat-1.cceff5804f570a74ddb3.png",
     "static/media/bianbeat-2.png": "/static/media/bianbeat-2.7dc897bcc2cfa63500a3.png",
@@ -42,7 +42,7 @@
     "static/media/nids-2.png": "/static/media/nids-2.4633aaf12162d0869052.png",
     "static/media/wid.jpg": "/static/media/wid.1b0bb2693d0c6c78c11c.jpg",
     "static/media/sentiment.jpg": "/static/media/sentiment.3621fed7c6e391a49db1.jpg",
-    "static/media/bianbeat.png": "/static/media/bianbeat.49ca8818e422b2b030c4.png",
+    "static/media/bianbeat-logo.png": "/static/media/bianbeat-logo.49ca8818e422b2b030c4.png",
     "static/media/nids.png": "/static/media/nids.fb4253efa9305e724164.png",
     "static/media/work.png": "/static/media/work.02a051a8a6e483c4111a.png",
     "static/media/cownado-2.png": "/static/media/cownado-2.2fcd8f3595ef481a33af.png",
@@ -93,11 +93,11 @@
     "static/media/server.svg": "/static/media/server.53c7411ee19f545352ff.svg",
     "static/media/cross.svg": "/static/media/cross.dd25ac74e5674d6dcf75.svg",
     "main.f79f045f.css.map": "/static/css/main.f79f045f.css.map",
-    "main.bafe2dd1.js.map": "/static/js/main.bafe2dd1.js.map",
+    "main.5fc0fc63.js.map": "/static/js/main.5fc0fc63.js.map",
     "453.28e11700.chunk.js.map": "/static/js/453.28e11700.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.f79f045f.css",
-    "static/js/main.bafe2dd1.js"
+    "static/js/main.5fc0fc63.js"
   ]
 }
